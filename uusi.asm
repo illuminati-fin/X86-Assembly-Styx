@@ -39,7 +39,6 @@ segment mystack stack
 stacktop:	
 	
 segment mydata data
-	; DEFINE YOUR VARIABLES HERE
 	foo	resw	1 ;reserve a word aka 2 bytes, 1 word
 	pressesc dw 0 ;reserves a double word
 	oldintseg resw 1 ;reserve word
@@ -56,7 +55,7 @@ segment mydata data
 	lineColor EQU grey ;define line color for borders and trail
 
 ;;;;;;;;;;;;;;
-; The code segment - YOUR CODE HERE
+; The code segment
 ;;;;;;;;;;;;;;
 
 segment mycode code
